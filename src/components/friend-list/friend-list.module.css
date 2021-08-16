@@ -1,0 +1,42 @@
+.friend_list {
+  width: 250px;
+  list-style: none;
+  display: block;
+  margin: 0 auto;
+  padding: 0;
+}
+
+.friend_item {
+  display: flex;
+  align-items: center;
+  padding-left: 5px;
+  border: 1px solid #ccc;
+  box-shadow: 2px 2px 4px rgb(95, 95, 73);
+  margin-bottom: 5px;
+  transition: 0.5s;
+  cursor: pointer;
+}
+
+.friend_item:hover {
+  transform: scale(1.1);
+}
+
+.status_mark {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: grey;
+  margin-right: 10px;
+}
+
+.status_mark_online {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: orange;
+  margin-right: 10px;
+}
+
+.friend_avatar {
+  margin-right: 25px;
+}
