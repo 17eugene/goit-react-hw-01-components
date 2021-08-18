@@ -1,8 +1,9 @@
 import ProfileMain from "./ProfileMain";
+import ProfileStats from "./ProfileStats";
 import user from './user.json'
 import styles from './profile.module.css';
 
-export default function Profile({ children }) {
+export default function Profile() {
     return (
         <div className={styles.profile_card}>
             <ProfileMain
@@ -11,7 +12,7 @@ export default function Profile({ children }) {
                 tag={user.tag}
                 location={user.location}
             />
-            {children}
+            <ProfileStats stats={user.stats}/>
         </div>
     )
 };
